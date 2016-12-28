@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import SWXMLHash
+
+extension XMLIndexer {
+    
+    func text(forElementString: String) -> String {
+        if let value = self[forElementString].element?.text {
+            return value
+        } else {
+            return ""
+        }
+    }
+}
