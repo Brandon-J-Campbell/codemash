@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		73038CF31DC04782006CB163 /* XMLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73038CF21DC04782006CB163 /* XMLHelper.swift */; };
-		73038CF41DC05312006CB163 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D939021DA74679003AA36D /* SWXMLHash.framework */; };
 		7318A2781E0DF3B200296CE0 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7318A2771E0DF3B200296CE0 /* ScheduleTableViewController.swift */; };
 		7318A27B1E13562E00296CE0 /* SessionsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 7318A27A1E13562E00296CE0 /* SessionsData.json */; };
+		7318A27D1E13746500296CE0 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7318A27C1E13746500296CE0 /* SessionViewController.swift */; };
+		7318A2851E159A4100296CE0 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7318A2841E159A4100296CE0 /* ContainerViewController.swift */; };
+		7318A2871E17187C00296CE0 /* ScheduleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7318A2861E17187C00296CE0 /* ScheduleCollectionViewController.swift */; };
 		7324B8F51DA73AAB00521832 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7324B8F41DA73AAB00521832 /* AppDelegate.swift */; };
 		7324B8F71DA73AAB00521832 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7324B8F61DA73AAB00521832 /* ViewController.swift */; };
 		7324B8FA1DA73AAB00521832 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7324B8F81DA73AAB00521832 /* Main.storyboard */; };
@@ -19,10 +20,7 @@
 		7324B90A1DA73AAB00521832 /* codemashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7324B9091DA73AAB00521832 /* codemashTests.swift */; };
 		7324B9151DA73AAB00521832 /* codemashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7324B9141DA73AAB00521832 /* codemashUITests.swift */; };
 		73B09FC01DF65D55000F698C /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B09FBF1DF65D55000F698C /* Speaker.swift */; };
-		73B09FC21DF66CD1000F698C /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B09FC11DF66CD1000F698C /* ContainerViewController.swift */; };
-		73C7E8AC1DF11F6500FCA10F /* SWXMLHash.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 73D939021DA74679003AA36D /* SWXMLHash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		73D938FF1DA741DF003AA36D /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 73D938FE1DA741DF003AA36D /* Cartfile */; };
-		73D939031DA74679003AA36D /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D939021DA74679003AA36D /* SWXMLHash.framework */; };
 		73EDE0CF1DAC70DF007DDADD /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EDE0CE1DAC70DF007DDADD /* Session.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +48,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				73C7E8AC1DF11F6500FCA10F /* SWXMLHash.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,9 +55,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		73038CF21DC04782006CB163 /* XMLHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLHelper.swift; sourceTree = "<group>"; };
 		7318A2771E0DF3B200296CE0 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
 		7318A27A1E13562E00296CE0 /* SessionsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SessionsData.json; sourceTree = "<group>"; };
+		7318A27C1E13746500296CE0 /* SessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		7318A2841E159A4100296CE0 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		7318A2861E17187C00296CE0 /* ScheduleCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleCollectionViewController.swift; sourceTree = "<group>"; };
 		7324B8F11DA73AAB00521832 /* codemash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codemash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7324B8F41DA73AAB00521832 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7324B8F61DA73AAB00521832 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,9 +74,7 @@
 		7324B9141DA73AAB00521832 /* codemashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codemashUITests.swift; sourceTree = "<group>"; };
 		7324B9161DA73AAB00521832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73B09FBF1DF65D55000F698C /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
-		73B09FC11DF66CD1000F698C /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		73D938FE1DA741DF003AA36D /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		73D939021DA74679003AA36D /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = codemash/Carthage/Build/iOS/SWXMLHash.framework; sourceTree = SOURCE_ROOT; };
 		73EDE0CE1DAC70DF007DDADD /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Models/Session.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,7 +83,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73D939031DA74679003AA36D /* SWXMLHash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +90,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73038CF41DC05312006CB163 /* SWXMLHash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +144,6 @@
 				7324B8FB1DA73AAB00521832 /* Assets.xcassets */,
 				7324B8FD1DA73AAB00521832 /* LaunchScreen.storyboard */,
 				7324B9001DA73AAB00521832 /* Info.plist */,
-				73038CF21DC04782006CB163 /* XMLHelper.swift */,
 			);
 			path = codemash;
 			sourceTree = "<group>";
@@ -175,9 +169,11 @@
 		738ADBBA1DFE3F2800177B6F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				73B09FC11DF66CD1000F698C /* ContainerViewController.swift */,
+				7318A2841E159A4100296CE0 /* ContainerViewController.swift */,
 				7324B8F61DA73AAB00521832 /* ViewController.swift */,
 				7318A2771E0DF3B200296CE0 /* ScheduleTableViewController.swift */,
+				7318A27C1E13746500296CE0 /* SessionViewController.swift */,
+				7318A2861E17187C00296CE0 /* ScheduleCollectionViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -185,7 +181,6 @@
 		73D939011DA74678003AA36D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				73D939021DA74679003AA36D /* SWXMLHash.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -355,12 +350,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7324B8F71DA73AAB00521832 /* ViewController.swift in Sources */,
+				7318A2871E17187C00296CE0 /* ScheduleCollectionViewController.swift in Sources */,
 				7324B8F51DA73AAB00521832 /* AppDelegate.swift in Sources */,
+				7318A2851E159A4100296CE0 /* ContainerViewController.swift in Sources */,
 				73B09FC01DF65D55000F698C /* Speaker.swift in Sources */,
+				7318A27D1E13746500296CE0 /* SessionViewController.swift in Sources */,
 				73EDE0CF1DAC70DF007DDADD /* Session.swift in Sources */,
-				73B09FC21DF66CD1000F698C /* ContainerViewController.swift in Sources */,
 				7318A2781E0DF3B200296CE0 /* ScheduleTableViewController.swift in Sources */,
-				73038CF31DC04782006CB163 /* XMLHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
