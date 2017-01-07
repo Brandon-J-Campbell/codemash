@@ -20,7 +20,6 @@
 		7324B90A1DA73AAB00521832 /* codemashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7324B9091DA73AAB00521832 /* codemashTests.swift */; };
 		7324B9151DA73AAB00521832 /* codemashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7324B9141DA73AAB00521832 /* codemashUITests.swift */; };
 		73B09FC01DF65D55000F698C /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B09FBF1DF65D55000F698C /* Speaker.swift */; };
-		73D938FF1DA741DF003AA36D /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 73D938FE1DA741DF003AA36D /* Cartfile */; };
 		73EDE0CF1DAC70DF007DDADD /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EDE0CE1DAC70DF007DDADD /* Session.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +73,6 @@
 		7324B9141DA73AAB00521832 /* codemashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codemashUITests.swift; sourceTree = "<group>"; };
 		7324B9161DA73AAB00521832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73B09FBF1DF65D55000F698C /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
-		73D938FE1DA741DF003AA36D /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		73EDE0CE1DAC70DF007DDADD /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Models/Session.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,7 +136,6 @@
 				7318A2791E13561900296CE0 /* Data */,
 				738ADBBA1DFE3F2800177B6F /* ViewControllers */,
 				73EDE0CD1DAC70A8007DDADD /* Models */,
-				73D938FE1DA741DF003AA36D /* Cartfile */,
 				7324B8F41DA73AAB00521832 /* AppDelegate.swift */,
 				7324B8F81DA73AAB00521832 /* Main.storyboard */,
 				7324B8FB1DA73AAB00521832 /* Assets.xcassets */,
@@ -307,7 +304,6 @@
 				7324B8FF1DA73AAB00521832 /* LaunchScreen.storyboard in Resources */,
 				7324B8FC1DA73AAB00521832 /* Assets.xcassets in Resources */,
 				7318A27B1E13562E00296CE0 /* SessionsData.json in Resources */,
-				73D938FF1DA741DF003AA36D /* Cartfile in Resources */,
 				7324B8FA1DA73AAB00521832 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
