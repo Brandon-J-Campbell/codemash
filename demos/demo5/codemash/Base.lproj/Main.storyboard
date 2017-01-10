@@ -39,8 +39,37 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kpb-cT-frv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1e-GG-2Dr">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Tuesday"/>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kw4-C1-CvG">
+                                        <rect key="frame" x="88" y="0.0" width="80" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Wednesday"/>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCr-7v-cFz">
+                                        <rect key="frame" x="176" y="0.0" width="80" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Thursday"/>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DV9-TM-A7k">
+                                        <rect key="frame" x="257" y="0.0" width="80" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Friday"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="fIl-6E-tpU"/>
+                                </constraints>
+                            </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epr-yq-TeD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="559"/>
                                 <connections>
                                     <segue destination="t07-VA-nbP" kind="embed" identifier="embedContainerViewController" id="PKa-xW-cbu"/>
                                 </connections>
@@ -50,8 +79,11 @@
                         <constraints>
                             <constraint firstItem="8kZ-t4-NZ8" firstAttribute="top" secondItem="epr-yq-TeD" secondAttribute="bottom" id="3xY-9Y-dea"/>
                             <constraint firstAttribute="trailing" secondItem="epr-yq-TeD" secondAttribute="trailing" id="GLG-dq-t1y"/>
+                            <constraint firstItem="Kpb-cT-frv" firstAttribute="leading" secondItem="tr9-I4-qWz" secondAttribute="leading" id="PvR-Jc-s5e"/>
+                            <constraint firstAttribute="trailing" secondItem="Kpb-cT-frv" secondAttribute="trailing" id="RxO-AM-DIT"/>
                             <constraint firstItem="epr-yq-TeD" firstAttribute="leading" secondItem="tr9-I4-qWz" secondAttribute="leading" id="a5j-Ts-Gul"/>
-                            <constraint firstItem="epr-yq-TeD" firstAttribute="top" secondItem="v4f-kx-Yxh" secondAttribute="bottom" id="wRW-bR-1Mb"/>
+                            <constraint firstAttribute="topMargin" secondItem="Kpb-cT-frv" secondAttribute="top" id="ftr-BC-PBM"/>
+                            <constraint firstItem="epr-yq-TeD" firstAttribute="top" secondItem="Kpb-cT-frv" secondAttribute="bottom" id="sZg-G4-SKl"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -245,7 +277,7 @@
             <objects>
                 <collectionViewController id="t07-VA-nbP" customClass="ContainerViewController" customModule="codemash" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" dataMode="prototypes" id="vuz-HM-CNF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Ab2-3t-Vt2">
@@ -256,7 +288,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ContainerCell" id="NQa-SU-0iH" customClass="ContainerCell" customModule="codemash" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="30" width="369" height="544"/>
+                                <rect key="frame" x="0.0" y="8" width="369" height="544"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="369" height="544"/>

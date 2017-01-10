@@ -132,7 +132,7 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="96"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oob-bv-s0Z" id="KNr-f7-S9h">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="95.666666666666671"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="95.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kZN-mv-IqT">
@@ -342,7 +342,7 @@
                                 <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13Q-YU-ohZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="265"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="309"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Pr-bS-tr0">
                                                 <rect key="frame" x="306" y="105" width="100" height="100"/>
@@ -391,15 +391,28 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHZ-sS-NTK">
+                                                <rect key="frame" x="0.0" y="265" width="414" height="44"/>
+                                                <color key="backgroundColor" red="0.94901960780000005" green="0.39607843139999999" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="450" id="MvA-iZ-QCM"/>
+                                                    <constraint firstAttribute="height" constant="44" id="qkl-gb-YqR"/>
+                                                </constraints>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="pbo-mU-NMn" firstAttribute="top" secondItem="1Pr-bS-tr0" secondAttribute="bottom" constant="8" id="0Nf-WK-PPi"/>
                                             <constraint firstAttribute="trailing" secondItem="09e-ud-HQD" secondAttribute="trailing" constant="8" id="5uO-Rq-agQ"/>
+                                            <constraint firstItem="XHZ-sS-NTK" firstAttribute="top" secondItem="Gof-iS-NIW" secondAttribute="bottom" constant="8" id="9Ki-ls-jj4"/>
                                             <constraint firstItem="pbo-mU-NMn" firstAttribute="leading" secondItem="13Q-YU-ohZ" secondAttribute="leading" constant="8" id="FW0-OV-SYo"/>
                                             <constraint firstItem="1Pr-bS-tr0" firstAttribute="top" secondItem="13Q-YU-ohZ" secondAttribute="top" constant="105" id="GGU-Vy-jLG">
                                                 <variation key="widthClass=regular" constant="8"/>
                                             </constraint>
+                                            <constraint firstAttribute="trailing" secondItem="XHZ-sS-NTK" secondAttribute="trailing" priority="750" id="Hht-af-iqW"/>
                                             <constraint firstItem="09e-ud-HQD" firstAttribute="top" secondItem="13Q-YU-ohZ" secondAttribute="topMargin" id="IA2-QQ-Yeg"/>
                                             <constraint firstItem="1Pr-bS-tr0" firstAttribute="leading" secondItem="0lh-YY-3KR" secondAttribute="trailing" constant="8" id="LV6-hf-fid"/>
                                             <constraint firstAttribute="trailing" secondItem="Gof-iS-NIW" secondAttribute="trailing" constant="8" id="LhF-b3-PG7"/>
@@ -423,25 +436,27 @@
                                             <constraint firstAttribute="trailing" secondItem="d1j-aW-rXh" secondAttribute="trailing" constant="8" id="cyG-d0-YYW"/>
                                             <constraint firstItem="09e-ud-HQD" firstAttribute="leading" secondItem="13Q-YU-ohZ" secondAttribute="leading" constant="8" id="dAZ-F0-es4"/>
                                             <constraint firstItem="Gof-iS-NIW" firstAttribute="leading" secondItem="13Q-YU-ohZ" secondAttribute="leading" constant="8" id="jJk-PC-rVN"/>
+                                            <constraint firstItem="XHZ-sS-NTK" firstAttribute="leading" secondItem="13Q-YU-ohZ" secondAttribute="leading" priority="750" id="jPl-BH-mSu"/>
                                             <constraint firstItem="d1j-aW-rXh" firstAttribute="top" secondItem="k4H-wH-kxW" secondAttribute="bottom" constant="16" id="jUE-mB-dV5"/>
                                             <constraint firstItem="0lh-YY-3KR" firstAttribute="leading" secondItem="13Q-YU-ohZ" secondAttribute="leading" constant="8" id="nZS-bc-o9U"/>
                                             <constraint firstItem="Gof-iS-NIW" firstAttribute="top" secondItem="pbo-mU-NMn" secondAttribute="bottom" constant="8" id="pf9-AQ-8iD"/>
                                             <constraint firstItem="1Pr-bS-tr0" firstAttribute="leading" secondItem="09e-ud-HQD" secondAttribute="trailing" constant="347" id="qCE-QP-D7N">
                                                 <variation key="widthClass=regular" constant="8"/>
                                             </constraint>
+                                            <constraint firstAttribute="bottom" secondItem="XHZ-sS-NTK" secondAttribute="bottom" id="qXR-AS-3VM"/>
                                             <constraint firstAttribute="trailing" secondItem="1Pr-bS-tr0" secondAttribute="trailing" constant="8" id="qbu-A4-cvj"/>
-                                            <constraint firstAttribute="bottom" secondItem="Gof-iS-NIW" secondAttribute="bottom" constant="8" id="tpd-kb-14v"/>
                                             <constraint firstItem="k4H-wH-kxW" firstAttribute="top" secondItem="09e-ud-HQD" secondAttribute="bottom" constant="8" id="uTN-BE-7qN"/>
                                             <constraint firstAttribute="trailing" secondItem="k4H-wH-kxW" secondAttribute="trailing" constant="8" id="v0X-8E-lyr"/>
+                                            <constraint firstItem="XHZ-sS-NTK" firstAttribute="centerX" secondItem="13Q-YU-ohZ" secondAttribute="centerX" id="wDb-lM-Npx"/>
                                             <constraint firstItem="pbo-mU-NMn" firstAttribute="top" secondItem="k4H-wH-kxW" secondAttribute="bottom" constant="164" id="xqY-u9-rHC">
                                                 <variation key="widthClass=regular" constant="8"/>
                                             </constraint>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="xqY-u9-rHC"/>
-                                                <exclude reference="PHI-Ug-ScJ"/>
                                                 <exclude reference="Ocg-c5-Mcj"/>
+                                                <exclude reference="PHI-Ug-ScJ"/>
+                                                <exclude reference="xqY-u9-rHC"/>
                                                 <exclude reference="MQ7-bM-dA4"/>
                                                 <exclude reference="GGU-Vy-jLG"/>
                                                 <exclude reference="OTV-IT-WCg"/>
@@ -452,12 +467,12 @@
                                             <mask key="constraints">
                                                 <exclude reference="5uO-Rq-agQ"/>
                                                 <exclude reference="v0X-8E-lyr"/>
-                                                <exclude reference="0Nf-WK-PPi"/>
-                                                <include reference="xqY-u9-rHC"/>
-                                                <include reference="PHI-Ug-ScJ"/>
-                                                <exclude reference="QdC-yT-AVd"/>
                                                 <include reference="Ocg-c5-Mcj"/>
                                                 <exclude reference="jUE-mB-dV5"/>
+                                                <include reference="PHI-Ug-ScJ"/>
+                                                <exclude reference="QdC-yT-AVd"/>
+                                                <exclude reference="0Nf-WK-PPi"/>
+                                                <include reference="xqY-u9-rHC"/>
                                                 <include reference="MQ7-bM-dA4"/>
                                                 <exclude reference="pf9-AQ-8iD"/>
                                                 <include reference="GGU-Vy-jLG"/>
@@ -509,7 +524,7 @@
         <scene sceneID="g8p-NR-Ypa">
             <objects>
                 <collectionViewController id="t07-VA-nbP" customClass="ContainerViewController" customModule="codemash" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" pagingEnabled="YES" dataMode="prototypes" id="vuz-HM-CNF">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" id="vuz-HM-CNF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="628"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

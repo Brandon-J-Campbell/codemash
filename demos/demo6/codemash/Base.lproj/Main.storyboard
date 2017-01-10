@@ -128,25 +128,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleTableCell" rowHeight="68" id="Oob-bv-s0Z" customClass="ScheduleTableCell" customModule="codemash" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="68"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleTableCell" rowHeight="97" id="Oob-bv-s0Z" customClass="ScheduleTableCell" customModule="codemash" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="97"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oob-bv-s0Z" id="KNr-f7-S9h">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4t8-py-kov">
-                                            <rect key="frame" x="8" y="8" width="359" height="20.5"/>
+                                            <rect key="frame" x="8" y="8" width="359" height="46.5"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xe2-l2-Rz4">
-                                            <rect key="frame" x="8" y="36.5" width="359" height="15"/>
+                                            <rect key="frame" x="8" y="62.5" width="359" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tai-jR-ofR">
+                                            <rect key="frame" x="287" y="8" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="4t8-py-kov" firstAttribute="leading" secondItem="KNr-f7-S9h" secondAttribute="leading" constant="8" id="8fs-WN-x0E"/>
@@ -160,6 +164,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="roomLabel" destination="Xe2-l2-Rz4" id="hx2-tb-ZQ9"/>
+                                    <outlet property="speakerImageView" destination="Tai-jR-ofR" id="OyU-gn-dJ6"/>
                                     <outlet property="titleLabel" destination="4t8-py-kov" id="4se-29-3eQ"/>
                                     <segue destination="kcF-qT-l1h" kind="show" identifier="showSession" id="FVA-8I-D7z"/>
                                 </connections>
