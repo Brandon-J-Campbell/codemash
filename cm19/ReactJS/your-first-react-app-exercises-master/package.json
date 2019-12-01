@@ -1,0 +1,118 @@
+{
+  "name": "your-first-react-app-exercises",
+  "version": "0.1.0",
+  "description": "Materials for the workshop \"Building Your First React App\", by Steven J Hicks.",
+  "keywords": [
+    "React",
+    "workshop",
+    "beginner"
+  ],
+  "author": "Steven J Hicks",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "7.1.6",
+    "axios": "^0.18.0",
+    "babel-core": "6.26.0",
+    "babel-eslint": "7.2.3",
+    "babel-jest": "20.0.3",
+    "babel-loader": "7.1.2",
+    "babel-preset-react-app": "^3.1.1",
+    "babel-runtime": "6.26.0",
+    "case-sensitive-paths-webpack-plugin": "2.1.1",
+    "chalk": "1.1.3",
+    "classnames": "^2.2.6",
+    "css-loader": "0.28.7",
+    "dotenv": "4.0.0",
+    "dotenv-expand": "4.2.0",
+    "eslint": "4.10.0",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-loader": "1.9.0",
+    "eslint-plugin-flowtype": "2.39.1",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "7.4.0",
+    "extract-text-webpack-plugin": "3.0.2",
+    "file-loader": "1.1.5",
+    "fs-extra": "3.0.1",
+    "html-webpack-plugin": "2.29.0",
+    "jest": "20.0.4",
+    "object-assign": "4.1.1",
+    "postcss-flexbugs-fixes": "3.2.0",
+    "postcss-loader": "2.0.8",
+    "promise": "8.0.1",
+    "prop-types": "^15.6.2",
+    "raf": "3.4.0",
+    "react": "16.7.0-alpha.0",
+    "react-dev-utils": "^5.0.1",
+    "react-dom": "16.7.0-alpha.0",
+    "react-router-dom": "^4.3.1",
+    "resolve": "1.6.0",
+    "style-loader": "0.19.0",
+    "sw-precache-webpack-plugin": "0.11.4",
+    "url-loader": "0.6.2",
+    "webpack": "3.8.1",
+    "webpack-manifest-plugin": "1.3.2",
+    "whatwg-fetch": "2.0.3"
+  },
+  "scripts": {
+    "verify": "node ./verify",
+    "test-exercise-1": "jest --config ./exercise-1/jest.config.js --watch",
+    "test-exercise-2": "cross-env APP_EXERCISE=exercise-2 node ./_not_important/scripts/test.js --env=jsdom --config ./exercise-2/jest.config.js",
+    "start-exercise-2": "cross-env APP_EXERCISE=exercise-2 node ./_not_important/scripts/start.js",
+    "test-exercise-3": "jest --config ./exercise-3/jest.config.js --watch",
+    "test-exercise-4": "jest --config ./exercise-4/jest.config.js --watch",
+    "start-exercise-5": "cross-env APP_EXERCISE=exercise-5 node ./_not_important/scripts/start.js",
+    "start-exercise-6": "cross-env APP_EXERCISE=exercise-6 node ./_not_important/scripts/start.js",
+    "start-exercise-7": "cross-env APP_EXERCISE=exercise-7 node ./_not_important/scripts/start.js",
+    "start-exercise-8": "cross-env APP_EXERCISE=exercise-8 node ./_not_important/scripts/start.js",
+    "start-exercise-9": "cross-env APP_EXERCISE=exercise-9 node ./_not_important/scripts/start.js",
+    "start-exercise-10": "cross-env APP_EXERCISE=exercise-10 node ./_not_important/scripts/start.js",
+    "start-exercise-11": "cross-env APP_EXERCISE=exercise-11 APP_USE_CSS_MODULES=true node ./_not_important/scripts/start.js",
+    "start-exercise-12": "cross-env APP_EXERCISE=exercise-12 APP_USE_CSS_MODULES=true node ./_not_important/scripts/start.js",
+    "start-exercise-13": "cross-env APP_EXERCISE=exercise-13 APP_USE_CSS_MODULES=true node ./_not_important/scripts/start.js",
+    "test-exercise-14": "jest --config ./exercise-14/jest.config.js --watch",
+    "start-exercise-15": "concurrently \"npm run start-exercise-15-server\" \"npm run start-exercise-15-client\" -n SERVER,CLIENT -c bgBlue,bgGreen",
+    "start-exercise-15-server": "json-server --watch exercise-15/data/db.json --port 2999",
+    "start-exercise-15-client": "cross-env APP_EXERCISE=exercise-15 APP_USE_CSS_MODULES=true node ./_not_important/scripts/start.js",
+    "start-exercise-16": "concurrently \"npm run start-exercise-16-server\" \"npm run start-exercise-16-client\" -n SERVER,CLIENT -c bgBlue,bgGreen",
+    "start-exercise-16-server": "json-server --watch exercise-16/data/db.json --port 2999",
+    "start-exercise-16-client": "cross-env APP_EXERCISE=exercise-16 APP_USE_CSS_MODULES=true node ./_not_important/scripts/start.js",
+    "start-exercise-16-hooks": "concurrently \"npm run start-exercise-16-hooks-server\" \"npm run start-exercise-16-hooks-client\" -n SERVER,CLIENT -c bgBlue,bgGreen",
+    "start-exercise-16-hooks-server": "json-server --watch exercise-16-hooks/data/db.json --port 2999",
+    "start-exercise-16-hooks-client": "cross-env APP_EXERCISE=exercise-16-hooks APP_USE_CSS_MODULES=true node ./_not_important/scripts/start.js",
+    "test-exercise-17": "cross-env APP_EXERCISE=exercise-17 node ./_not_important/scripts/test.js --env=jsdom --config ./exercise-17/jest.config.js --watch --runInBand",
+    "start-exercise-17": "concurrently \"npm run start-exercise-17-server\" \"npm run start-exercise-17-client\" -n SERVER,CLIENT -c bgBlue,bgGreen",
+    "start-exercise-17-server": "json-server --watch exercise-17/data/db.json --port 2999",
+    "start-exercise-17-client": "cross-env APP_EXERCISE=exercise-17 APP_USE_CSS_MODULES=true node ./_not_important/scripts/start.js",
+    "test-exercise-18": "cross-env APP_EXERCISE=exercise-18 node ./_not_important/scripts/test.js --env=jsdom --config ./exercise-18/jest.config.js --watch --runInBand",
+    "start-exercise-18": "concurrently \"npm run start-exercise-18-server\" \"npm run start-exercise-18-client\" -n SERVER,CLIENT -c bgBlue,bgGreen",
+    "start-exercise-18-server": "json-server --watch exercise-18/data/db.json --port 2999",
+    "start-exercise-18-client": "cross-env APP_EXERCISE=exercise-18 APP_USE_CSS_MODULES=true node ./_not_important/scripts/start.js"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "cross-env": "^5.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "json-server": "^0.14.0",
+    "merge": ">=1.2.1",
+    "react-testing-library": "^5.1.0",
+    "webpack-dev-server": "^3.0.0"
+  },
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:2999",
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+  }
+}
